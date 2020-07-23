@@ -6,14 +6,29 @@ Installs various useful PHP 7 extensions and adjusts path to nginx html director
 
 ## Setup
 
+#### Console
+
 ```console
 $ cd docker
 $ docker-composer up
 ```
 
+#### Daemon
+
+```console
+$ cd docker
+$ docker-composer up -d
+```
+
+
+## Working Directory
+
+All web files are stored in `src/`.
+
+
 ## Updates to docker-composer.yml
 
-When updates to docker-composer.yml are necessary, 
+After making updates to docker-composer.yml, the following commands are necessary to rebuild already-built containers.
 
 ```console
 $ docker-composer rm
