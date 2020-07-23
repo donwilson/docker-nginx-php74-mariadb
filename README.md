@@ -1,5 +1,7 @@
 # docker-nginx-php74-mariadb
 
+Inspired by [this tutorial](https://x-team.com/blog/docker-compose-php-environment-from-scratch/) but with some added adjustments.
+
 ## Setup
 
 ```console
@@ -16,5 +18,4 @@ $ docker-composer rm
 $ docker-composer build
 $ docker-composer up
 ```
-
 
